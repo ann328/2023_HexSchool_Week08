@@ -1,3 +1,9 @@
+@mixin lg {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
 @mixin tab {
     @media (max-width: 768px) {
         @content;
@@ -57,6 +63,10 @@
     }
 }
 
-.text-justify {
-    text-align-last: justify;
+.text-end {
+    text-align-last: end;
+}
+
+.z-3 {
+    z-index: 3;
 }
