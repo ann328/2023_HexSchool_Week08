@@ -1,0 +1,82 @@
+@mixin tab {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+.bg-img {
+    background-image: url(../images/home_background.png);
+    height: 880px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.bg-circle {
+    background: $gradient-radial-circle;
+}
+
+.bg-carousel {
+    background-image: url(../images/carousel_background.png);
+    height: 1089px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.ff-nst {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.ff-s {
+    font-family: 'Shrikhand', cursive;
+}
+
+.w-44 {
+    width: 44px;
+    height: 44px;
+}
+
+.w-196 {
+    width: 196px;
+    height: 196px;
+}
+
+.w-416 {
+    width: 416px;
+}
+
+.w-950 {
+    width: 950px;
+}
+
+.w-132 {
+    width: 132px;
+    height: 132px;
+}
+
+.border-md-end {
+    border-right: 1px solid $white;
+
+    @include tab {
+        border-right: 0px;
+    }
+}
+
+.border-sm-top {
+    border-top: 0px;
+
+    @include tab {
+        border-top: 1px solid $white;
+    }
+}
+
+.text-justify {
+    text-align-last: justify;
+}

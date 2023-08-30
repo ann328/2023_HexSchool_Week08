@@ -1,3 +1,72 @@
-.index-title {
-  font-size: 100px;
+.circle__img {
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.ai__box {
+  max-height: 676px;
+  aspect-ratio: 416/676;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  &:hover {
+    transition: all 0.5s;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
+  }
+
+  &:focus {
+    transition: all 0.5s;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
+  }
+
+  @include tab {
+    aspect-ratio: 1/1;
+  }
+}
+
+.ai__diane {
+  position: absolute;
+  background-image: url('../images/diane.png');
+
+  @include tab {
+    background-image: url('../images/diane_square1.png');
+  }
+}
+
+.ai__felix {
+  background-image: url('../images/felix.png');
+
+  @include tab {
+    background-image: url('../images/felix_square1.png');
+  }
+}
+
+.ai__karina {
+  background-image: url('../images/karina.png');
+
+  @include tab {
+    background-image: url('../images/karina_square1.png');
+  }
+}
+
+.ai__vito {
+  background-image: url('../images/vito.png');
+
+  @include tab {
+    background-image: url('../images/vito_square1.png');
+  }
 }

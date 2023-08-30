@@ -1,0 +1,54 @@
+    // 
+    $utilities: map-merge($utilities,
+        // bootstrap_utilities.scss 一定要引入，不然會沒辦法使用原本的通用類別
+        ("font-size": (rfs: false,
+            responsive: true,
+            //ann
+            property: font-size,
+            class: fs,
+            values: $font-sizes ),
+          "letter-spacing": (responsive: true,
+            property: letter-spacing,
+            class: ls,
+            values: (6: 1.6px, //ann
+              4:4.8px, //ann
+              16:16px, //ann
+              20:20px, //ann
+              24:24px, //ann
+              26:26px, //ann
+              32:32px, //ann
+              40:40px, //ann
+              48:48px, //ann
+              80:80px, //ann
+
+            ),
+          ),
+          "gradient": (property: background-image,
+            class: bg,
+            values: (gradient: var(--#{$prefix}gradient),
+              gradient-line-s:$gradient-line-star, //ann
+              gradient-line-e:$gradient-line-end, //ann
+            )),
+          "translate-middle": (responsive: true,
+            property: transform,
+            class: translate-middle,
+            values: (null: translate(-50%, -50%),
+              x: translateX(-50%),
+              y: translateY(-50%),
+            )),
+          "top": (responsive: true,
+            property: top,
+            values: $position-values),
+          "bottom": (responsive: true,
+            property: bottom,
+            values: $position-values),
+          "start": (responsive: true,
+            property: left,
+            class: start,
+            values: $position-values),
+          "end": (responsive: true,
+            property: right,
+            class: end,
+            values: $position-values),
+        ),
+      );
