@@ -1,0 +1,30 @@
+.bg-img {
+    background-image: url(../images/home_background.png);
+    height: 880px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+
+    @include phone {
+        height: 1778px;
+    }
+}
+
+.bg-circle {
+    background: $gradient-radial-circle;
+    z-index: -2;
+}
+
+.bg-carousel {
+    background-image: url(../images/carousel_background.png);
+    height: 1089px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(12px);
+
+    @include tab {
+        height: 791px;
+    }
+}

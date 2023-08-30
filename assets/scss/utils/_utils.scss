@@ -10,26 +10,6 @@
     }
 }
 
-.bg-img {
-    background-image: url(../images/home_background.png);
-    height: 880px;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-}
-
-.bg-circle {
-    background: $gradient-radial-circle;
-}
-
-.bg-carousel {
-    background-image: url(../images/carousel_background.png);
-    height: 1089px;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-}
-
 .ff-nst {
     font-family: 'Noto Sans TC', sans-serif;
 }
