@@ -8,20 +8,25 @@
 
 .bg-img {
     background-image: url(../images/home_background.png);
-    height: 880px;
+    // height: 880px;
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
+    margin-bottom: -114px;
 
-
-    @include phone {
-        height: 1778px;
+    @include tab {
+        height: 80%;
     }
 }
 
 .bg-circle {
     background: $gradient-radial-circle;
-    z-index: -2;
+    z-index: 1;
+}
+
+.bg-circle-secondary {
+    background: $gradient-radial-circle-secondary;
+    z-index: 1;
 }
 
 .bg-carousel {

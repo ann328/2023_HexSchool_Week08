@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALPHABOX+</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="pt-20 bg-circle">
+            <div class="container-fluid">
+                <div class="row pt-15 pb-6">
+                    <div class="col-md-5 col-12 align-self-end">
+                        <h2 class="fs-md-16 fs-10 fw-900 ls-md-64 ls-40">登入</h2>
+                    </div>
+                    <div class="col-md-2 col-12 mx-md-0 text-md-end text-center">
+                        <img src="../assets/images/circle.png" alt="circle" class="w-196 circle__img overflow-visible">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mx-auto text-center">
+                        <p class="ff-s fs-8 fw-medium mb-8">ALPHABOX+</p>
+                        <botton
+                            class="d-flex align-items-center justify-content-center fw-medium btn btn-outline-light rounded-pill p-0 mb-4">
+                            <img src="../assets/images/apple 1.png" alt="apple_icon" class="p-100">
+                            Continue with Apple
+                        </botton>
+                        <botton
+                            class="d-flex align-items-center justify-content-center fw-medium btn btn-outline-light rounded-pill p-0 mb-6">
+                            <img src="../assets/images/google.png" alt="google" class="p-100">
+                            Continue with Google
+                        </botton>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="197" height="1" viewBox="0 0 197 1"
+                                fill="none">
+                                <path
+                                    d="M1 0C0.723858 0 0.5 0.223858 0.5 0.5C0.5 0.776142 0.723858 1 1 1V0ZM1 1H197V0H1V1Z"
+                                    fill="#828282" />
+                            </svg>
+                            <p class="px-1">
+                                or
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="197" height="1" viewBox="0 0 197 1"
+                                fill="none">
+                                <path
+                                    d="M1 0C0.723858 0 0.5 0.223858 0.5 0.5C0.5 0.776142 0.723858 1 1 1V0ZM1 1H197V0H1V1Z"
+                                    fill="#828282" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

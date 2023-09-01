@@ -19,7 +19,10 @@
               32:32px, //ann
               40:40px, //ann
               48:48px, //ann
+              64:64px, //ann
               80:80px, //ann
+              100:100px, //ann
+              320:320px, //ann
 
             ),
           ),
@@ -58,5 +61,9 @@
             values: (null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
               0: 0,
             )),
-        ),
+          "z-index": (responsive: true,
+            property: z-index,
+            class: z,
+            values: $zindex-levels,
+          )),
       );

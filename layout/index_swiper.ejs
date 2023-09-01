@@ -1,0 +1,23 @@
+<script>
+    const swiper = new Swiper(".swiper", {
+        spaceBetween: 24,
+        slidesPerView: 3,
+        // Scrollbar
+        scrollbar: {
+            el: ".swiper-scrollbar",
+            draggable: true
+        },
+        // 使 swiper 可以使用滑鼠滾輪捲動
+        mousewheel: true,
+        breakpoints: {
+            992: {
+                spaceBetween: 24,
+                slidesPerView: 3,
+            },
+            768: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+            },
+        }
+    });
+</script>

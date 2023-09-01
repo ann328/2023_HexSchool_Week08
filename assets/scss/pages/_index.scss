@@ -38,6 +38,28 @@
   }
 }
 
+.ai__box-center {
+  max-height: 580px;
+  aspect-ratio: 416/580;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  &:hover {
+    transition: all 0.5s;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
+  }
+
+  &:focus {
+    transition: all 0.5s;
+    box-shadow: 0px 0px 16px 8px rgba(143, 0, 255, 0.80);
+  }
+
+  @include tab {
+    aspect-ratio: 1/1;
+  }
+}
+
 .ai__diane {
   position: absolute;
   background-image: url('../images/diane.png');
@@ -72,5 +94,53 @@
   @include tab {
     background-image: url('../images/vito_square1.png');
 
+  }
+}
+
+.watermark {
+  // content: "ALPHABOX+";
+  // position: absolute;
+  // transform: translate(-25%, 100%);
+  bottom: -20%;
+  color: rgba(225, 225, 225, 0.04);
+
+  @include lg {
+    bottom: -10%;
+  }
+
+  @include tab {
+    bottom: -3%;
+  }
+}
+
+.ai__list {
+  background-color: #000;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+
+  @include llg {
+    background-position: center top;
+  }
+
+  &:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+  }
+
+  &-diane {
+    background-image: url(../images/diane_vertical.png);
+  }
+
+  &-felix {
+    background-image: url(../images/felix_vertical.png);
+  }
+
+  &-karina {
+    background-image: url(../images/karina_verticalgle.png);
+  }
+
+  &-vito {
+    background-image: url(../images/vito_vertical.png);
   }
 }

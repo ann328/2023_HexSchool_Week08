@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Saira+Extra+Condensed&family=Shrikhand&display=swap');
 
 body {
+    line-height: 150%;
     font-family: 'Noto Sans TC', sans-serif;
-    font-family: 'Shrikhand', cursive;
+    color: $white;
 }
 
-// * {
-//     outline: 1px solid red;
-// }
+* {
+    outline: 1px solid red;
+}
+
 
 img {
     vertical-align: middle;
@@ -17,8 +18,7 @@ img {
     object-fit: cover;
 }
 
-a {
-    &:hover {
-        color: #828282 !important;
-    }
+
+textarea {
+    resize: none;
 }
