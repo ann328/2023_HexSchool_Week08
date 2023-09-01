@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALPHABOX+</title>
-  <script type="module" crossorigin src="/2023_HexSchool_Week08/assets/main-77144345.js"></script>
-  <link rel="stylesheet" href="/2023_HexSchool_Week08/assets/main-8634be52.css">
+  <script type="module" crossorigin src="/2023_HexSchool_Week08/assets/main-bdb31d89.js"></script>
+  <link rel="stylesheet" href="/2023_HexSchool_Week08/assets/main-c99ac9c3.css">
 </head>
 
 <body>
@@ -56,7 +56,7 @@
                         <a class="nav-link pe-lg-6 py-2 fw-medium" aria-current="page" href="#">註冊</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link pe-lg-6 py-2 fw-medium" aria-current="page" href="#">登入</a>
+                        <a class="nav-link pe-lg-6 py-2 fw-medium" aria-current="page" href="member_login.html">登入</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-light my-5 py-1 px-4 fw-medium" aria-current="page" href="#">
@@ -102,7 +102,7 @@
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ9SURBVHgBpZRPaBNBFMbf2w3WgmJEoxRLEvDSooVNA6IgNK0H05PSQ1EsNj30aM9F/EONh0IPQr15aayHGvVQjJIcrAmIPdZI0UiRuDSKJRba2sSmSXbHN40pu5MNxfaDXfZ9O+83b94Mg2Chbz7F3qhLvbINupExhQG6vy8foz8sBYAZHWCqfT76GAGZmIuikfUp/YjSGH06jH4FaJJK4BHvfCxkNCVjsNzlHSdYSITVkZuSJ+bauu9ZAn91ekYYYzfgP4XAbs+1+c9VY5m/ijMQkA+VHpQW7BYpbJUxeJ3bOLBIgY0e8yANBto/xV5tT0CDUXsLaequu/jxCPyJuCoYgAwy/bojkUwY85On/X0MIciXzGGez+YeIq+OdmaianBoPuJUNcY6mxJJ1aJk+KD43VAEnwjbApbeQIwacdFolpf29zdeK0wavfPDGR/sIF3DVd4Tp2kGOg4irPJDjsMOonOrSkRoNZrU0y+wS7HKUapRHvYgiS/R5CBcgN0KISVRmUnBtr+LHvXVjGX6gPEha1ocw3RYwPIMDBL0UdWMbLrgfs67qGt6R/LqtGpRB5wd/umWkcWRn0WDdJpIkiV4Tt3MciNcOAnBnJc314myFFee9QRE2PGHt7oIlhBhlKPOjjaHtm6bchz6Xm64nnCYhVRar5peb6AsVOhlP/z7DDRnr4BY3TaQyxPuGaem1r0c0uv7TLERSpdK8P3oiTv8W64OWHqRijb1tvK4wwq4UpRNcaHhB5RsK3Awd2qMYDerfs0Fq0xdDlD/7oLQI7FCQMyCxobWBp+GTTbUEQfTjl2io9BCt2bLP6BK3Z+lrIQjvzb5dSi6Keb9BePV9a0NATGyAAAAAElFTkSuQmCC" alt="google" class="p-100">
                             Continue with Google
                         </botton>
-                        <div class="d-flex align-items-center justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center mb-6">
                             <svg xmlns="http://www.w3.org/2000/svg" width="197" height="1" viewBox="0 0 197 1"
                                 fill="none">
                                 <path
@@ -119,6 +119,34 @@
                                     fill="#828282" />
                             </svg>
                         </div>
+                        <form action="">
+                            <div class="form-floating mb-md-4 mb-2 text-other fw-bolder fs-md-5 fs-4">
+                                <input type="email" class="form-control" id="EMAIL" placeholder="name@example.com">
+                                <label for="EMAIL">EMAIL</label>
+                            </div>
+                            <div class="form-floating mb-md-4 mb-2 text-other fw-bolder fs-md-5 fs-4">
+                                <input type="password" class="form-control" id="Password" placeholder="Password">
+                                <label for="Password">密碼</label>
+                            </div>
+                            <botton type="submit" class="btn btn-primary fw-bold w-100 mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" class="me-1">
+                                    <mask id="mask0_464_3402" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="24" height="24">
+                                        <rect width="24" height="24" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_464_3402)">
+                                        <path
+                                            d="M12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM11 8V3H13V8H11ZM11 21V16H13V21H11ZM16 13V11H21V13H16ZM3 13V11H8V13H3Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                                立即登入
+                            </botton>
+                            <div class="text-end mb-md-93 mb-20">
+                                <a href="#" class="link-underline">忘記密碼</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
