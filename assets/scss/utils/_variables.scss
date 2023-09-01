@@ -295,6 +295,7 @@ $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
 $other: #1F0F39; //ann
+$other-secondary: #AD93CF; //ann
 
 
 // scss-docs-end theme-color-variables
@@ -311,6 +312,9 @@ $theme-colors: (
     "dark": $dark,
     "other": $other,
     //ann
+    "other-secondary": $other-secondary,
+    //ann
+
     ) !default;
 // scss-docs-end theme-colors-map
 
