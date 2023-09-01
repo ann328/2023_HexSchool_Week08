@@ -107,3 +107,14 @@
     margin-left: -12px;
     margin-right: -12px;
 }
+
+.form-floating {
+    position: relative;
+
+    >.form-control,
+    >.form-control-plaintext,
+    >.form-select {
+        height: 46px;
+        min-height: 48px;
+    }
+}

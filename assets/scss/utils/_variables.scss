@@ -468,12 +468,15 @@ $spacers: (
     //224
 
     //
+    93:93px,
+    //93
+    54:54px,
+    //54
     100:10px,
     //10
     188:18px,
     //18
-    54:54px,
-    //54
+
 
     ) !default; //ann
 // scss-docs-end spacer-variables-maps
@@ -967,7 +970,7 @@ $btn-link-hover-color: var(--#{$prefix}link-hover-color) !default;
 $btn-link-disabled-color: $gray-600 !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: var(--#{$prefix}border-radius) !default;
+$btn-border-radius: 4px; //ann var(--#{$prefix}border-radius) !default;
 $btn-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;
 $btn-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;
 
@@ -1041,7 +1044,7 @@ $input-focus-color: $input-color !default;
 $input-focus-width: $input-btn-focus-width !default;
 $input-focus-box-shadow: $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color: $other; //ann var(--#{$prefix}secondary-color) !default;
+$input-placeholder-color: var(--#{$prefix}secondary-color) !default;
 $input-plaintext-color: var(--#{$prefix}body-color) !default;
 
 $input-height-border: calc(#{$input-border-width} * 2) !default; // stylelint-disable-line function-disallowed-list
@@ -1197,15 +1200,15 @@ $form-file-button-hover-bg: var(--#{$prefix}secondary-bg) !default;
 
 // scss-docs-start form-floating-variables
 $form-floating-height: add(3.5rem, $input-height-border) !default;
-$form-floating-line-height: 1.25 !default;
-$form-floating-padding-x: $input-padding-x !default;
-$form-floating-padding-y: 1rem !default;
+$form-floating-line-height: 1.5; //ann 1.25 !default;
+$form-floating-padding-x: 16px; //ann $input-padding-x !default;
+$form-floating-padding-y: 8px; //ann 1rem !default;
 $form-floating-input-padding-t: 1.625rem !default;
 $form-floating-input-padding-b: .625rem !default;
 $form-floating-label-height: 1.5em !default;
 $form-floating-label-opacity: .65 !default;
 $form-floating-label-transform: scale(.85) translateY(-.5rem) translateX(.15rem) !default;
-$form-floating-label-disabled-color: $gray-600 !default;
+$form-floating-label-disabled-color: $other ; //ann $gray-600 !default;
 $form-floating-transition: opacity .1s ease-in-out,
     transform .1s ease-in-out !default;
 // scss-docs-end form-floating-variables
