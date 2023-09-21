@@ -288,6 +288,7 @@ $cyans: (
 // scss-docs-start theme-color-variables
 $primary: #7000FF; //ann $blue !default;
 $secondary: #11002D; //ann $gray-600 !default;
+$secondary-dark: #380C7E; //ann $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -314,6 +315,7 @@ $theme-colors: (
     //ann
     "other-secondary": $other-secondary,
     //ann
+    "secondary-dark": $secondary-dark,
 
     ) !default;
 // scss-docs-end theme-colors-map
@@ -517,7 +519,7 @@ $body-emphasis-color: $black !default;
 // Style anchor elements.
 
 $link-color: $white; //ann $primary !default;
-$link-decoration: none; //ann underline !default;
+$link-decoration: none !default; //ann underline !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: #828282; //ann shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
